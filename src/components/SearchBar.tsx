@@ -27,7 +27,7 @@ function SearchBar() {
         options={pokemons}
         sx={{ width: 300 }}
         inputValue={inputValue}
-        onInputChange={(event, newInputValue) => {
+        onInputChange={(_event, newInputValue) => {
           setInputValue(newInputValue);
         }}
       />
