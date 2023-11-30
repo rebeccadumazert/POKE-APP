@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { CardMedia } from "@mui/material";
+import { CardMedia, LinearProgress } from "@mui/material";
 
 type pokemonApiOutput = {
   name: string;
@@ -84,7 +84,7 @@ function PokeDetails() {
           </CardContent>
         </Card>
       ) : (
-        "loading"
+        <LinearProgress color="secondary" />
       )}
     </div>
   );
