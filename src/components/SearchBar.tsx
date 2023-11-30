@@ -22,6 +22,7 @@ function SearchBar() {
   return (
     <>
       <Autocomplete
+        style={{ margin: "auto" }}
         placeholder="Find your Pokemon"
         options={pokemons}
         sx={{ width: 300 }}
@@ -35,7 +36,7 @@ function SearchBar() {
       ) : (
         <div>
           <Link to={`/${inputValue}`}>
-            <Button color="danger" size="lg">
+            <Button style={{ margin: "20px" }} color="danger" size="lg">
               Check all details about {inputValue}
             </Button>
           </Link>
