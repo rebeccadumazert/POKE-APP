@@ -36,7 +36,6 @@ function PokeDetails() {
     }
     fetchData();
   }, [pokeName]);
-  console.log(pokemon);
   return (
     <div>
       {pokemon ? (
